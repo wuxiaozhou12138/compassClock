@@ -15,7 +15,10 @@ var weekList=[];
 var hourList=[];var minuteList=[];
 var secondsList=[];
 var isCircle=false;
-var textSet=[[monthText,monthList],[dayText,dayList],[weekText,weekList],[hourText,hourList],[minuteText,minuteList],[secondsText,secondsList]];
+var textSet=[
+    [monthText,monthList],[dayText,dayList],
+    [weekText,weekList],[hourText,hourList],[minuteText,minuteList],[secondsText,secondsList]
+];
 window.onload = function(){
     init();
     setInterval(function(){

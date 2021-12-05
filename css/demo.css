@@ -4,13 +4,14 @@
 html,body{
     width:100%;
     height:100%;
-    background-image: url(../image/star.jpg);
+    background-image: url(../image/hhh.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     overflow:hidden;
     font-size: 20px;
 }
-#clock{position:relative;
+#clock{
+    position:relative;
     width:100%;
     height:100%;
 }
