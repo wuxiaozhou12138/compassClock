@@ -12,12 +12,17 @@ var clock;
 var monthList=[];
 var dayList=[];
 var weekList=[];
-var hourList=[];var minuteList=[];
+var hourList=[];
+var minuteList=[];
 var secondsList=[];
-var isCircle=false;
+var isCircle=true;
 var textSet=[
-    [monthText,monthList],[dayText,dayList],
-    [weekText,weekList],[hourText,hourList],[minuteText,minuteList],[secondsText,secondsList]
+    [monthText,monthList],
+    [dayText,dayList],
+    [weekText,weekList],
+    [hourText,hourList],
+    [minuteText,minuteList],
+    [secondsText,secondsList]
 ];
 window.onload = function(){
     init();
@@ -31,6 +36,7 @@ window.onload = function(){
 }
 function init(){
     clock=document.getElementById('clock');
+    clock.style.transform="rotate(90deg)";
     for(var i=0;i<textSet.length;i++){
         for(var j=0;j<textSet[i][0].length;j++){
             var temp=createLabel(textSet[i][0][j]);
@@ -93,7 +99,7 @@ function changePosition(){
         },50);}
     }
 }
-function changeCircle(){
-    isCircle=true;
-    clock.style.transform="rotate(90deg)";
-}
+// function changeCircle(){
+//     isCircle=true;
+//     clock.style.transform="rotate(90deg)";
+// }
